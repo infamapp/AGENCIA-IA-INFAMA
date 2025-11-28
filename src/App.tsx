@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import emailjs from '@emailjs/browser';
 import {
   Sparkles,
   Zap,
@@ -60,35 +59,14 @@ function App() {
     setSuccessMessage(null);
     setErrorMessage(null);
 
-    try {
-      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID as string;
-      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID as string;
-      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY as string;
+    // Simulación de envío
+    console.log('Formulario enviado:', formData);
 
-      if (!serviceId || !templateId || !publicKey) {
-        throw new Error('Faltan variables de entorno de EmailJS');
-      }
-
-      await emailjs.send(
-        serviceId,
-        templateId,
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          phone: formData.phone,
-          company: formData.company,
-          message: formData.message,
-        },
-        { publicKey }
-      );
-
+    setTimeout(() => {
+      setIsSending(false);
       setSuccessMessage('¡Gracias! Hemos recibido tu mensaje y te contactaremos muy pronto.');
       setFormData({ name: '', email: '', phone: '', company: '', message: '' });
-    } catch (err) {
-      setErrorMessage('Hubo un problema al enviar el mensaje. Inténtalo de nuevo en unos minutos.');
-    } finally {
-      setIsSending(false);
-    }
+    }, 1500);
   };
 
   return (
