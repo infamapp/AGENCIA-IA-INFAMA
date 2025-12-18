@@ -126,7 +126,7 @@ function App() {
               AI-POWERED SOLUTIONS
             </div>
 
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-black leading-[0.9] mb-8 tracking-tighter">
+            <h1 className="text-5xl md:text-8xl lg:text-9xl font-black leading-[0.9] mb-8 tracking-tighter">
               <span className="block text-white">POTENCIAMOS</span>
               <span className="block text-white">TU NEGOCIO</span>
               <span className="block text-gray-400">CON IA REAL</span>
@@ -369,7 +369,7 @@ function App() {
             ].map((step, i) => (
               <div
                 key={i}
-                className="group bg-zinc-950 border border-gray-900 p-10 hover:bg-zinc-900 transition-all duration-500 flex items-center gap-10"
+                className="group bg-zinc-950 border border-gray-900 p-6 md:p-10 hover:bg-zinc-900 transition-all duration-500 flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-10"
               >
                 <div className="text-7xl font-black text-gray-900 group-hover:text-gray-800 transition-colors duration-500">
                   {step.number}
@@ -422,7 +422,7 @@ function App() {
             <div className="relative">
               <div className="aspect-square bg-zinc-900 border border-gray-800 overflow-hidden">
                 <img
-                  src={`${import.meta.env.BASE_URL}img/EquipoIA.jpg`}
+                  src={`${import.meta.env.BASE_URL}img/infamaIA.jpeg`}
                   alt="Equipo The Infama IA"
                   className="w-full h-full object-cover"
                 />
@@ -566,7 +566,7 @@ function App() {
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     rows={4}
                     className="w-full bg-black border-b border-gray-800 py-3 text-white focus:outline-none focus:border-white transition-colors resize-none"
-                    placeholder="¿Qué proceso quieres automatizar o mejorar con IA?"
+                    placeholder="Consúltanos cuales son tus necesidades"
                     required
                   />
                 </div>
