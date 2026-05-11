@@ -23,6 +23,26 @@
   }
 }
 
+@keyframes chatSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
 .animate-fadeIn {
   animation: fadeIn 0.3s ease-out;
 }
+
+.animate-chatSlideUp {
+  animation: chatSlideUp 0.25s ease-out;
+}
+
+/* Staggered bounce for typing indicator */
+.bounce-delay-0 { animation-delay: 0ms; }
+.bounce-delay-1 { animation-delay: 150ms; }
+.bounce-delay-2 { animation-delay: 300ms; }
