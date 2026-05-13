@@ -140,8 +140,38 @@ const translations = {
         success: '¡Gracias! Hemos recibido tu mensaje y te contactaremos muy pronto.',
       },
     },
+    faq: {
+      label: 'PREGUNTAS FRECUENTES',
+      title: '¿Tienes dudas? Tenemos respuestas',
+      items: [
+        {
+          q: '¿Qué servicios ofrece The Infama Agency?',
+          a: 'Ofrecemos automatización de procesos con IA, marketing inteligente, generación de contenido IA, agentes IA personalizados, desarrollo de herramientas IA y consultoría estratégica. Cada solución se adapta a la identidad y necesidades únicas de tu empresa.',
+        },
+        {
+          q: '¿Cuánto cuesta implementar inteligencia artificial en mi empresa?',
+          a: 'Adaptamos los presupuestos a cada empresa: desde automatizaciones puntuales hasta transformaciones completas. Ofrecemos una sesión estratégica gratuita para evaluar tu caso y presentar una propuesta con ROI proyectado desde el día uno.',
+        },
+        {
+          q: '¿Cuánto tiempo tarda la implementación?',
+          a: 'Entre 2 semanas para automatizaciones simples y 3 meses para proyectos complejos. Acompañamos a tu equipo en cada etapa: diagnóstico, propuesta, implementación, capacitación y optimización continua.',
+        },
+        {
+          q: '¿Trabajáis con pequeñas y medianas empresas?',
+          a: 'Sí, trabajamos con empresas de todos los tamaños. Las soluciones se adaptan a tu presupuesto y necesidades reales, haciendo la IA accesible independientemente del tamaño de tu empresa.',
+        },
+        {
+          q: '¿Qué resultados puedo esperar?',
+          a: 'Nuestros clientes obtienen en promedio un ROI del 300% en automatización, un ahorro del 70% en tiempo de procesos manuales y mejoras significativas en conversión y satisfacción del cliente. Más de 200 empresas ya han sido transformadas.',
+        },
+        {
+          q: '¿Ofrecéis soporte después de la implementación?',
+          a: 'Sí. Ofrecemos soporte y acompañamiento continuo: capacitamos a tu equipo, resolvemos dudas y optimizamos los sistemas según los resultados obtenidos. Tu éxito es nuestro éxito.',
+        },
+      ],
+    },
     seo: { title: 'Nuestros Servicios y Procesos Completos' },
-    footer: { copy: '© 2025 The Infama IA. Transformando negocios con IA real y efectiva.' },
+    footer: { copy: '© 2025 The Infama Agency. Transformando negocios con IA real y efectiva.' },
     chatbot: {
       greeting: '¡Hola! Soy el asistente de The Infama IA. ¿En qué puedo ayudarte hoy?',
       faqLabel: 'Preguntas frecuentes',
@@ -266,8 +296,38 @@ const translations = {
         success: 'Thank you! We have received your message and will contact you shortly.',
       },
     },
+    faq: {
+      label: 'FREQUENTLY ASKED QUESTIONS',
+      title: 'Have questions? We have answers',
+      items: [
+        {
+          q: 'What services does The Infama Agency offer?',
+          a: 'We offer AI process automation, intelligent marketing, AI content generation, custom AI agents, AI tools development, and strategic consulting. Every solution is tailored to your company\'s unique identity and needs.',
+        },
+        {
+          q: 'How much does AI implementation cost?',
+          a: 'We adapt budgets to each company: from specific automations to full transformations. We offer a free strategic session to evaluate your case and present a proposal with projected ROI from day one.',
+        },
+        {
+          q: 'How long does implementation take?',
+          a: 'Between 2 weeks for simple automations and 3 months for complex projects. We support your team at every stage: diagnosis, proposal, implementation, training, and continuous optimization.',
+        },
+        {
+          q: 'Do you work with small and medium businesses?',
+          a: 'Yes, we work with companies of all sizes. Solutions are adapted to your budget and real needs, making AI accessible regardless of company size.',
+        },
+        {
+          q: 'What results can I expect?',
+          a: 'Our clients achieve an average 300% ROI in automation, 70% time savings in manual processes, and significant improvements in conversion and customer satisfaction. Over 200 companies have already been transformed.',
+        },
+        {
+          q: 'Do you offer post-implementation support?',
+          a: 'Yes. We offer continuous support and follow-up: we train your team, answer questions, and optimize systems based on results obtained. Your success is our success.',
+        },
+      ],
+    },
     seo: { title: 'Our Complete Services and Processes' },
-    footer: { copy: '© 2025 The Infama IA. Transforming businesses with real and effective AI.' },
+    footer: { copy: '© 2025 The Infama Agency. Transforming businesses with real and effective AI.' },
     chatbot: {
       greeting: "Hi! I'm The Infama IA assistant. How can I help you today?",
       faqLabel: 'Frequently asked',
@@ -322,7 +382,7 @@ function ChatBot({ lang, t }: { lang: Lang; t: typeof translations['es'] }) {
           {/* Header */}
           <div className="bg-black border-b border-gray-800 px-5 py-4 flex items-center justify-between flex-shrink-0">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full overflow-hidden border border-green-900 flex-shrink-0">
+              <div className="w-10 h-10 rounded-full overflow-hidden border border-teal-900 flex-shrink-0">
                 <img
                   src={`${import.meta.env.BASE_URL}img/infamaIA.jpeg`}
                   alt="Infama IA"
@@ -331,8 +391,8 @@ function ChatBot({ lang, t }: { lang: Lang; t: typeof translations['es'] }) {
               </div>
               <div>
                 <div className="text-white font-semibold text-sm">Infama IA</div>
-                <div className="text-green-400 text-xs flex items-center gap-1.5">
-                  <span className="w-1.5 h-1.5 bg-green-400 rounded-full inline-block"></span>
+                <div className="text-teal-400 text-xs flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 bg-teal-400 rounded-full inline-block"></span>
                   Online
                 </div>
               </div>
@@ -384,10 +444,10 @@ function ChatBot({ lang, t }: { lang: Lang; t: typeof translations['es'] }) {
                   <button
                     key={i}
                     onClick={() => handleQuestion(item.q, item.a)}
-                    className="w-full text-left text-xs text-gray-400 hover:text-white bg-zinc-900 hover:bg-zinc-800 border border-gray-800 hover:border-green-900 px-3 py-2 rounded-lg flex items-center justify-between gap-2 transition-all duration-200"
+                    className="w-full text-left text-xs text-gray-400 hover:text-white bg-zinc-900 hover:bg-zinc-800 border border-gray-800 hover:border-teal-900 px-3 py-2 rounded-lg flex items-center justify-between gap-2 transition-all duration-200"
                   >
                     <span className="truncate">{item.q}</span>
-                    <ChevronRight size={12} className="flex-shrink-0 text-green-500" />
+                    <ChevronRight size={12} className="flex-shrink-0 text-teal-500" />
                   </button>
                 ))}
               </div>
@@ -417,6 +477,7 @@ function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [isSeoSectionOpen, setIsSeoSectionOpen] = useState(false);
+  const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
   const [isSending, setIsSending] = useState(false);
   const [successMessage, setSuccessMessage] = useState<string | null>(null);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
@@ -463,9 +524,9 @@ function App() {
             {/* Logo */}
             <a href="#home" className="flex items-center group">
               <img
-                src={`${import.meta.env.BASE_URL}img/infamaIA.jpeg`}
-                alt="The Infama IA"
-                className="h-10 w-auto object-contain"
+                src={`${import.meta.env.BASE_URL}img/logo-infama.svg`}
+                alt="The Infama Agency"
+                className="h-12 w-auto object-contain"
               />
             </a>
 
@@ -556,14 +617,14 @@ function App() {
 
       {/* ── Hero ── */}
       <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-24">
-        <div className="absolute inset-0 bg-gradient-to-br from-green-950/20 via-black to-black pointer-events-none"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-teal-950/20 via-black to-black pointer-events-none"></div>
         <div className="absolute top-0 right-0 w-1/2 h-full opacity-5 pointer-events-none"
-          style={{ background: 'radial-gradient(ellipse at 80% 20%, #86efac 0%, transparent 60%)' }}
+          style={{ background: 'radial-gradient(ellipse at 80% 20%, #2DD4BF 0%, transparent 60%)' }}
         ></div>
 
         <div className="max-w-[1600px] mx-auto px-5 lg:px-12 relative z-10 w-full py-16 md:py-0">
           <div className="max-w-5xl">
-            <div className="inline-flex items-center gap-2 mb-8 text-xs uppercase tracking-[0.3em] text-green-400/70 border border-green-900/50 px-4 py-2 rounded-sm">
+            <div className="inline-flex items-center gap-2 mb-8 text-xs uppercase tracking-[0.3em] text-teal-400/70 border border-teal-900/50 px-4 py-2 rounded-sm">
               <Sparkles size={12} />
               {t.hero.badge}
             </div>
@@ -571,7 +632,7 @@ function App() {
             <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black leading-[0.88] mb-8 tracking-tighter">
               <span className="block text-white">{t.hero.title[0]}</span>
               <span className="block text-white">{t.hero.title[1]}</span>
-              <span className="block text-transparent bg-clip-text" style={{ backgroundImage: 'linear-gradient(90deg, #86efac, #4ade80)' }}>
+              <span className="block text-transparent bg-clip-text" style={{ backgroundImage: 'linear-gradient(90deg, #2DD4BF, #14B8A6)' }}>
                 {t.hero.title[2]}
               </span>
             </h1>
@@ -590,7 +651,7 @@ function App() {
               </a>
               <a
                 href="#services"
-                className="inline-flex items-center justify-center border border-gray-700 text-gray-300 px-10 py-4 text-sm uppercase tracking-widest font-medium hover:border-green-700 hover:text-white transition-all duration-300"
+                className="inline-flex items-center justify-center border border-gray-700 text-gray-300 px-10 py-4 text-sm uppercase tracking-widest font-medium hover:border-teal-700 hover:text-white transition-all duration-300"
               >
                 {t.hero.ctaSecondary}
               </a>
@@ -607,7 +668,7 @@ function App() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 sm:gap-6">
             {t.stats.map((stat, i) => (
               <div key={i} className="text-center sm:text-left sm:border-l sm:border-gray-900 sm:pl-10 first:border-l-0 first:pl-0">
-                <div className="text-5xl md:text-6xl font-black mb-2 text-white" style={{ color: i === 0 ? '#86efac' : 'white' }}>
+                <div className="text-5xl md:text-6xl font-black mb-2 text-white" style={{ color: i === 0 ? '#2DD4BF' : 'white' }}>
                   {stat.number}
                 </div>
                 <div className="text-xs uppercase tracking-widest text-gray-500 mb-1">{stat.label}</div>
@@ -622,7 +683,7 @@ function App() {
       <section id="services" className="py-24 md:py-32 bg-black">
         <div className="max-w-[1600px] mx-auto px-5 lg:px-12">
           <div className="mb-16 md:mb-20">
-            <div className="text-xs uppercase tracking-[0.3em] text-green-500/60 mb-5">{t.services.label}</div>
+            <div className="text-xs uppercase tracking-[0.3em] text-teal-500/60 mb-5">{t.services.label}</div>
             <h2 className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tighter text-white max-w-4xl leading-tight">
               {t.services.title}
             </h2>
@@ -636,8 +697,8 @@ function App() {
                   key={i}
                   className="group bg-black p-8 md:p-10 hover:bg-zinc-950 transition-all duration-500 cursor-default"
                 >
-                  <div className="w-12 h-12 border border-gray-800 group-hover:border-green-900 flex items-center justify-center mb-7 transition-colors duration-500">
-                    <Icon className="w-5 h-5 text-gray-600 group-hover:text-green-400 transition-colors duration-500" />
+                  <div className="w-12 h-12 border border-gray-800 group-hover:border-teal-900 flex items-center justify-center mb-7 transition-colors duration-500">
+                    <Icon className="w-5 h-5 text-gray-600 group-hover:text-teal-400 transition-colors duration-500" />
                   </div>
                   <div className="text-xs text-gray-700 mb-3 font-mono">0{i + 1}</div>
                   <h3 className="text-xl font-bold text-white mb-3 tracking-tight">{service.title}</h3>
@@ -653,7 +714,7 @@ function App() {
       <section id="work" className="py-24 md:py-32 bg-zinc-950">
         <div className="max-w-[1600px] mx-auto px-5 lg:px-12">
           <div className="mb-16 md:mb-20">
-            <div className="text-xs uppercase tracking-[0.3em] text-green-500/60 mb-5">{t.work.label}</div>
+            <div className="text-xs uppercase tracking-[0.3em] text-teal-500/60 mb-5">{t.work.label}</div>
             <h2 className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tighter text-white max-w-4xl leading-tight">
               {t.work.title}
             </h2>
@@ -663,7 +724,7 @@ function App() {
             {t.work.items.map((project, i) => (
               <div
                 key={i}
-                className="group bg-black border border-gray-900 hover:border-green-950 transition-all duration-500 overflow-hidden"
+                className="group bg-black border border-gray-900 hover:border-teal-950 transition-all duration-500 overflow-hidden"
               >
                 <div className="p-8 md:p-10">
                   <div className="flex items-start justify-between mb-6 gap-4">
@@ -672,7 +733,7 @@ function App() {
                       <h3 className="text-2xl font-bold text-white truncate">{project.company}</h3>
                     </div>
                     <div className="text-right flex-shrink-0">
-                      <div className="text-3xl md:text-4xl font-black text-green-400">{project.result}</div>
+                      <div className="text-3xl md:text-4xl font-black text-teal-400">{project.result}</div>
                       <div className="text-xs uppercase tracking-widest text-gray-600">{project.metric}</div>
                     </div>
                   </div>
@@ -682,7 +743,7 @@ function App() {
                   <div className="space-y-2.5">
                     {project.achievements.map((achievement, j) => (
                       <div key={j} className="flex items-start gap-3">
-                        <CheckCircle className="w-4 h-4 text-green-900 group-hover:text-green-600 flex-shrink-0 mt-0.5 transition-colors duration-500" />
+                        <CheckCircle className="w-4 h-4 text-teal-900 group-hover:text-teal-600 flex-shrink-0 mt-0.5 transition-colors duration-500" />
                         <span className="text-gray-500 text-sm">{achievement}</span>
                       </div>
                     ))}
@@ -698,7 +759,7 @@ function App() {
       <section id="process" className="py-24 md:py-32 bg-black">
         <div className="max-w-[1600px] mx-auto px-5 lg:px-12">
           <div className="mb-16 md:mb-20">
-            <div className="text-xs uppercase tracking-[0.3em] text-green-500/60 mb-5">{t.process.label}</div>
+            <div className="text-xs uppercase tracking-[0.3em] text-teal-500/60 mb-5">{t.process.label}</div>
             <h2 className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tighter text-white max-w-4xl leading-tight">
               {t.process.title}
             </h2>
@@ -712,14 +773,14 @@ function App() {
                   key={i}
                   className="group bg-zinc-950 border-b border-gray-900 last:border-b-0 px-6 md:px-10 py-7 md:py-9 hover:bg-zinc-900 transition-all duration-400 flex flex-col sm:flex-row items-start sm:items-center gap-5 sm:gap-10"
                 >
-                  <div className="text-5xl md:text-6xl font-black text-gray-900 group-hover:text-green-950 transition-colors duration-500 select-none w-16 flex-shrink-0">
+                  <div className="text-5xl md:text-6xl font-black text-gray-900 group-hover:text-teal-950 transition-colors duration-500 select-none w-16 flex-shrink-0">
                     {step.number}
                   </div>
                   <div className="flex-1 min-w-0">
                     <h3 className="text-xl md:text-2xl font-bold text-white mb-1.5 tracking-tight">{step.title}</h3>
                     <p className="text-gray-500 text-base">{step.desc}</p>
                   </div>
-                  <Icon className="w-8 h-8 text-gray-800 group-hover:text-green-700 transition-colors duration-500 flex-shrink-0 hidden sm:block" />
+                  <Icon className="w-8 h-8 text-gray-800 group-hover:text-teal-700 transition-colors duration-500 flex-shrink-0 hidden sm:block" />
                 </div>
               );
             })}
@@ -732,7 +793,7 @@ function App() {
         <div className="max-w-[1600px] mx-auto px-5 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-20 items-center">
             <div>
-              <div className="text-xs uppercase tracking-[0.3em] text-green-500/60 mb-5">{t.about.label}</div>
+              <div className="text-xs uppercase tracking-[0.3em] text-teal-500/60 mb-5">{t.about.label}</div>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter text-white mb-8 leading-tight">
                 {t.about.title}
               </h2>
@@ -747,7 +808,7 @@ function App() {
               <div className="mt-10 space-y-3">
                 {t.about.features.map((item, i) => (
                   <div key={i} className="flex items-center gap-4">
-                    <div className="w-1.5 h-1.5 bg-green-500 rounded-full flex-shrink-0"></div>
+                    <div className="w-1.5 h-1.5 bg-teal-500 rounded-full flex-shrink-0"></div>
                     <span className="text-gray-300 text-base">{item}</span>
                   </div>
                 ))}
@@ -762,7 +823,7 @@ function App() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -bottom-3 -right-3 w-24 h-24 border border-green-900/50 pointer-events-none"></div>
+              <div className="absolute -bottom-3 -right-3 w-24 h-24 border border-teal-900/50 pointer-events-none"></div>
             </div>
           </div>
         </div>
@@ -773,7 +834,7 @@ function App() {
         <div className="max-w-[1600px] mx-auto px-5 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-20">
             <div>
-              <div className="text-xs uppercase tracking-[0.3em] text-green-500/60 mb-5">{t.contact.label}</div>
+              <div className="text-xs uppercase tracking-[0.3em] text-teal-500/60 mb-5">{t.contact.label}</div>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter text-white mb-7 leading-tight">
                 {t.contact.title}
               </h2>
@@ -788,7 +849,7 @@ function App() {
                   </div>
                   <div>
                     <div className="text-xs uppercase tracking-widest text-gray-600 mb-1">{t.contact.emailLabel}</div>
-                    <a href="mailto:infamapp@gmail.com" className="text-white text-base hover:text-green-400 transition-colors">
+                    <a href="mailto:infamapp@gmail.com" className="text-white text-base hover:text-teal-400 transition-colors">
                       infamapp@gmail.com
                     </a>
                   </div>
@@ -799,7 +860,7 @@ function App() {
                   </div>
                   <div>
                     <div className="text-xs uppercase tracking-widest text-gray-600 mb-1">{t.contact.phoneLabel}</div>
-                    <a href="tel:+34611257828" className="text-white text-base hover:text-green-400 transition-colors">
+                    <a href="tel:+34611257828" className="text-white text-base hover:text-teal-400 transition-colors">
                       611 257 828
                     </a>
                   </div>
@@ -856,7 +917,7 @@ function App() {
                     type="text"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full bg-black border-b border-gray-800 py-3 text-white focus:outline-none focus:border-green-700 transition-colors placeholder:text-gray-700"
+                    className="w-full bg-black border-b border-gray-800 py-3 text-white focus:outline-none focus:border-teal-700 transition-colors placeholder:text-gray-700"
                     placeholder={t.contact.form.namePlaceholder}
                     required
                   />
@@ -869,7 +930,7 @@ function App() {
                     type="email"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full bg-black border-b border-gray-800 py-3 text-white focus:outline-none focus:border-green-700 transition-colors placeholder:text-gray-700"
+                    className="w-full bg-black border-b border-gray-800 py-3 text-white focus:outline-none focus:border-teal-700 transition-colors placeholder:text-gray-700"
                     placeholder={t.contact.form.emailPlaceholder}
                     required
                   />
@@ -882,7 +943,7 @@ function App() {
                     type="tel"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full bg-black border-b border-gray-800 py-3 text-white focus:outline-none focus:border-green-700 transition-colors placeholder:text-gray-700"
+                    className="w-full bg-black border-b border-gray-800 py-3 text-white focus:outline-none focus:border-teal-700 transition-colors placeholder:text-gray-700"
                     placeholder={t.contact.form.phonePlaceholder}
                     required
                   />
@@ -895,7 +956,7 @@ function App() {
                     type="text"
                     value={formData.company}
                     onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                    className="w-full bg-black border-b border-gray-800 py-3 text-white focus:outline-none focus:border-green-700 transition-colors placeholder:text-gray-700"
+                    className="w-full bg-black border-b border-gray-800 py-3 text-white focus:outline-none focus:border-teal-700 transition-colors placeholder:text-gray-700"
                     placeholder={t.contact.form.companyPlaceholder}
                     required
                   />
@@ -908,14 +969,14 @@ function App() {
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     rows={4}
-                    className="w-full bg-black border-b border-gray-800 py-3 text-white focus:outline-none focus:border-green-700 transition-colors resize-none placeholder:text-gray-700"
+                    className="w-full bg-black border-b border-gray-800 py-3 text-white focus:outline-none focus:border-teal-700 transition-colors resize-none placeholder:text-gray-700"
                     placeholder={t.contact.form.messagePlaceholder}
                     required
                   />
                 </div>
 
                 {successMessage && (
-                  <div className="text-green-400 text-sm border border-green-900/50 bg-green-950/20 px-4 py-3 rounded">
+                  <div className="text-teal-400 text-sm border border-teal-900/50 bg-teal-950/20 px-4 py-3 rounded">
                     {successMessage}
                   </div>
                 )}
@@ -939,6 +1000,40 @@ function App() {
                 </button>
               </form>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── FAQ ── */}
+      <section className="py-24 md:py-32 bg-zinc-950" aria-label="Preguntas frecuentes">
+        <div className="max-w-[1600px] mx-auto px-5 lg:px-12">
+          <div className="mb-16 md:mb-20">
+            <div className="text-xs uppercase tracking-[0.3em] text-teal-500/60 mb-5">{t.faq.label}</div>
+            <h2 className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tighter text-white max-w-4xl leading-tight">
+              {t.faq.title}
+            </h2>
+          </div>
+          <div className="max-w-3xl space-y-px">
+            {t.faq.items.map((item, i) => (
+              <div key={i} className="border-b border-gray-900">
+                <button
+                  onClick={() => setOpenFaqIndex(openFaqIndex === i ? null : i)}
+                  className="w-full py-6 flex items-center justify-between text-left gap-6 hover:bg-gray-900/10 transition-colors duration-200 pr-2"
+                  aria-expanded={openFaqIndex === i}
+                >
+                  <span className="text-base md:text-lg font-semibold text-white">{item.q}</span>
+                  {openFaqIndex === i
+                    ? <ChevronUp className="text-teal-500 flex-shrink-0" size={20} />
+                    : <ChevronDown className="text-gray-600 flex-shrink-0" size={20} />
+                  }
+                </button>
+                {openFaqIndex === i && (
+                  <div className="pb-6 text-gray-400 text-base leading-relaxed animate-fadeIn">
+                    {item.a}
+                  </div>
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -985,9 +1080,9 @@ function App() {
         <div className="max-w-[1600px] mx-auto px-5 lg:px-12">
           <div className="flex flex-col md:flex-row justify-between items-center gap-5">
             <img
-              src={`${import.meta.env.BASE_URL}img/infamaIA.jpeg`}
-              alt="The Infama IA"
-              className="h-8 w-auto object-contain"
+              src={`${import.meta.env.BASE_URL}img/logo-infama.svg`}
+              alt="The Infama Agency"
+              className="h-10 w-auto object-contain"
             />
             <div className="text-gray-600 text-sm text-center">{t.footer.copy}</div>
           </div>
