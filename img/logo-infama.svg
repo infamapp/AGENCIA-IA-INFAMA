@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 200" role="img" aria-label="The Infama Agency">
+  <rect width="560" height="200" fill="#000000"/>
+  <text
+    x="78" y="82"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-style="italic"
+    font-size="46"
+    fill="#14B8A6"
+    transform="rotate(-9 78 82)">The</text>
+  <text
+    x="44" y="160"
+    font-family="Impact, 'Arial Black', 'Franklin Gothic Heavy', sans-serif"
+    font-size="118"
+    font-weight="900"
+    fill="#FFFFFF"
+    letter-spacing="-2">INFAMA</text>
+  <text
+    x="430" y="188"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-style="italic"
+    font-size="40"
+    fill="#14B8A6"
+    transform="rotate(-9 430 188)">Agency</text>
+</svg>
