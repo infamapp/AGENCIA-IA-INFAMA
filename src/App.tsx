@@ -63,40 +63,40 @@ const translations = {
       ],
     },
     work: {
-      label: 'CASOS DE ÉXITO',
-      title: 'Resultados reales que transforman negocios',
+      label: 'IMPACTO REAL DE LA IA',
+      title: 'Lo que la IA hace realmente por tu negocio',
       items: [
         {
-          company: 'E-commerce de Moda',
-          industry: 'Retail',
-          result: '+450%',
-          metric: 'Conversión',
-          desc: 'Implementación de asistente IA que personaliza recomendaciones y automatiza atención',
-          achievements: ['85% reducción tiempo de respuesta', '3.2x incremento ticket promedio', '92% satisfacción del cliente'],
+          company: 'Atención al Cliente',
+          industry: 'Fuente: Salesforce State of AI, 2024',
+          result: '80%',
+          metric: 'Consultas resueltas por IA',
+          desc: 'Los agentes de IA gestionan 8 de cada 10 consultas sin intervención humana. Tu equipo se libera para lo que realmente importa.',
+          achievements: ['Respuesta inmediata 24/7 sin coste extra', 'Tiempo de resolución: de horas a segundos', 'Satisfacción del cliente medible desde el día 1'],
         },
         {
-          company: 'Agencia de Marketing',
-          industry: 'Marketing',
-          result: '70%',
-          metric: 'Ahorro de Tiempo',
-          desc: 'Sistema de generación de contenido IA para redes sociales y campañas publicitarias',
-          achievements: ['500+ piezas de contenido/mes', '280% aumento en engagement', 'ROI de 420% en 6 meses'],
+          company: 'Eficiencia Operativa',
+          industry: 'Fuente: McKinsey Global Survey, 2024',
+          result: '40%',
+          metric: 'Tiempo recuperado en procesos',
+          desc: 'Las empresas que automatizan con IA liberan entre el 40% y el 60% del tiempo dedicado a tareas repetitivas y administrativas.',
+          achievements: ['Procesos manuales convertidos en flujos automáticos', 'Menos errores y mayor consistencia operativa', 'Equipo más ágil y enfocado en crecer'],
         },
         {
-          company: 'Startup SaaS',
-          industry: 'Technology',
-          result: '+300%',
-          metric: 'Leads Calificados',
-          desc: 'Embudo automatizado con IA para scoring de leads y seguimiento inteligente',
-          achievements: ['45% mejora en tasa de cierre', '80% procesos automatizados', 'Escalabilidad sin límites'],
+          company: 'Generación de Ingresos',
+          industry: 'Fuente: Harvard Business Review, 2023',
+          result: '+15%',
+          metric: 'Ingresos por personalización IA',
+          desc: 'La personalización impulsada por IA incrementa los ingresos hasta un 15% al conectar la oferta correcta con el cliente correcto en el momento justo.',
+          achievements: ['Recomendaciones de producto en tiempo real', 'Segmentación predictiva de audiencias', 'Campañas que se adaptan al comportamiento del usuario'],
         },
         {
-          company: 'Empresa de Servicios',
-          industry: 'Services',
-          result: '60%',
-          metric: 'Reducción de Costos',
-          desc: 'Automatización de procesos administrativos y operativos con agentes IA',
-          achievements: ['12 horas diarias recuperadas', 'Cero errores en facturación', 'Equipo enfocado en estrategia'],
+          company: 'Reducción de Costes',
+          industry: 'Fuente: Gartner Automation Report, 2024',
+          result: '30%',
+          metric: 'Reducción costes operativos',
+          desc: 'Empresas de todos los sectores reportan una reducción del 20-30% en costes operativos en los primeros 12 meses tras implementar automatización con IA.',
+          achievements: ['Facturación y gestión documental automatizada', 'Escalabilidad sin crecimiento lineal del equipo', 'ROI medible desde los primeros 90 días'],
         },
       ],
     },
@@ -219,40 +219,40 @@ const translations = {
       ],
     },
     work: {
-      label: 'SUCCESS STORIES',
-      title: 'Real results that transform businesses',
+      label: 'REAL AI IMPACT',
+      title: 'What AI actually does for your business',
       items: [
         {
-          company: 'Fashion E-commerce',
-          industry: 'Retail',
-          result: '+450%',
-          metric: 'Conversion',
-          desc: 'AI assistant implementation that personalizes recommendations and automates support',
-          achievements: ['85% reduction in response time', '3.2x average ticket increase', '92% customer satisfaction'],
+          company: 'Customer Service',
+          industry: 'Source: Salesforce State of AI, 2024',
+          result: '80%',
+          metric: 'Queries resolved by AI',
+          desc: 'AI agents handle 8 out of 10 customer queries without human intervention. Your team is freed for what truly matters.',
+          achievements: ['Instant 24/7 response at no extra cost', 'Resolution time: from hours to seconds', 'Customer satisfaction measurable from day 1'],
         },
         {
-          company: 'Marketing Agency',
-          industry: 'Marketing',
-          result: '70%',
-          metric: 'Time Saved',
-          desc: 'AI content generation system for social media and advertising campaigns',
-          achievements: ['500+ content pieces/month', '280% engagement increase', '420% ROI in 6 months'],
+          company: 'Operational Efficiency',
+          industry: 'Source: McKinsey Global Survey, 2024',
+          result: '40%',
+          metric: 'Time saved in processes',
+          desc: 'Companies automating with AI free up 40% to 60% of the time spent on repetitive and administrative tasks.',
+          achievements: ['Manual processes converted into automated flows', 'Fewer errors and greater operational consistency', 'More agile team focused on growth'],
         },
         {
-          company: 'SaaS Startup',
-          industry: 'Technology',
-          result: '+300%',
-          metric: 'Qualified Leads',
-          desc: 'AI-powered automated funnel for lead scoring and intelligent follow-up',
-          achievements: ['45% improvement in close rate', '80% automated processes', 'Unlimited scalability'],
+          company: 'Revenue Growth',
+          industry: 'Source: Harvard Business Review, 2023',
+          result: '+15%',
+          metric: 'Revenue from AI personalization',
+          desc: 'AI-driven personalization increases revenue by up to 15% by connecting the right offer to the right customer at the right moment.',
+          achievements: ['Real-time product recommendations', 'Predictive audience segmentation', 'Campaigns that adapt to user behavior'],
         },
         {
-          company: 'Services Company',
-          industry: 'Services',
-          result: '60%',
-          metric: 'Cost Reduction',
-          desc: 'Automation of administrative and operational processes with AI agents',
-          achievements: ['12 hours recovered daily', 'Zero billing errors', 'Team focused on strategy'],
+          company: 'Cost Reduction',
+          industry: 'Source: Gartner Automation Report, 2024',
+          result: '30%',
+          metric: 'Operational cost reduction',
+          desc: 'Companies across sectors report a 20-30% reduction in operating costs within the first 12 months after implementing AI automation.',
+          achievements: ['Automated billing and document management', 'Scalability without linear team growth', 'Measurable ROI within the first 90 days'],
         },
       ],
     },
@@ -343,6 +343,53 @@ const translations = {
   },
 };
 
+// ─── AI Placeholder Image ─────────────────────────────────────────────────────
+
+function AIPlaceholder({ className, style }: { className?: string; style?: React.CSSProperties }) {
+  return (
+    <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" className={className} style={style} aria-label="Infama IA">
+      <rect width="400" height="400" fill="#09090b"/>
+      {/* Radial lines from center */}
+      {([[200,200,70,70],[200,200,330,70],[200,200,70,330],[200,200,330,330],
+         [200,200,200,40],[200,200,200,360],[200,200,40,200],[200,200,360,200]] as [number,number,number,number][]).map(([x1,y1,x2,y2],i) => (
+        <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke="#14B8A6" strokeWidth="0.8" opacity="0.28"/>
+      ))}
+      {/* Outer ring perimeter */}
+      <line x1="70"  y1="70"  x2="330" y2="70"  stroke="#14B8A6" strokeWidth="0.5" opacity="0.14"/>
+      <line x1="70"  y1="330" x2="330" y2="330" stroke="#14B8A6" strokeWidth="0.5" opacity="0.14"/>
+      <line x1="70"  y1="70"  x2="70"  y2="330" stroke="#14B8A6" strokeWidth="0.5" opacity="0.14"/>
+      <line x1="330" y1="70"  x2="330" y2="330" stroke="#14B8A6" strokeWidth="0.5" opacity="0.14"/>
+      {/* Mid-ring spoke lines */}
+      {([[130,130],[270,130],[130,270],[270,270]] as [number,number][]).map(([cx,cy],i) => (
+        <line key={i} x1={cx} y1={cy} x2={200} y2={200} stroke="#14B8A6" strokeWidth="0.8" opacity="0.38"/>
+      ))}
+      {/* Mid-ring nodes */}
+      {([[130,130],[270,130],[130,270],[270,270]] as [number,number][]).map(([cx,cy],i) => (
+        <circle key={i} cx={cx} cy={cy} r={5} fill="#2DD4BF" opacity="0.65"/>
+      ))}
+      {/* Corner nodes */}
+      {([[70,70],[330,70],[70,330],[330,330]] as [number,number][]).map(([cx,cy],i) => (
+        <circle key={i} cx={cx} cy={cy} r={7} fill="#14B8A6" opacity="0.7"/>
+      ))}
+      {/* Axis nodes */}
+      {([[200,40],[200,360],[40,200],[360,200]] as [number,number][]).map(([cx,cy],i) => (
+        <circle key={i} cx={cx} cy={cy} r={4} fill="#14B8A6" opacity="0.38"/>
+      ))}
+      {/* Central glow */}
+      <circle cx="200" cy="200" r="70" fill="#14B8A6" opacity="0.03"/>
+      <circle cx="200" cy="200" r="46" fill="#14B8A6" opacity="0.06"/>
+      <circle cx="200" cy="200" r="30" fill="none" stroke="#14B8A6" strokeWidth="1" opacity="0.38"/>
+      {/* Central node */}
+      <circle cx="200" cy="200" r="18" fill="#14B8A6" opacity="0.14"/>
+      <circle cx="200" cy="200" r="11" fill="#14B8A6" opacity="0.4"/>
+      <circle cx="200" cy="200" r="5"  fill="#14B8A6"/>
+      {/* IA watermark */}
+      <text x="200" y="375" fontFamily="Impact, 'Arial Black', sans-serif" fontSize="52" fontWeight="900"
+        fill="#FFFFFF" opacity="0.04" textAnchor="middle" letterSpacing="12">IA</text>
+    </svg>
+  );
+}
+
 // ─── Chatbot Component ────────────────────────────────────────────────────────
 
 type Message = { from: 'bot' | 'user'; text: string };
@@ -383,11 +430,7 @@ function ChatBot({ lang, t }: { lang: Lang; t: typeof translations['es'] }) {
           <div className="bg-black border-b border-gray-800 px-5 py-4 flex items-center justify-between flex-shrink-0">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-full overflow-hidden border border-teal-900 flex-shrink-0">
-                <img
-                  src={`${import.meta.env.BASE_URL}img/infamaIA.jpeg`}
-                  alt="Infama IA"
-                  className="w-full h-full object-cover"
-                />
+                <AIPlaceholder className="w-full h-full" />
               </div>
               <div>
                 <div className="text-white font-semibold text-sm">Infama IA</div>
@@ -817,11 +860,7 @@ function App() {
 
             <div className="relative">
               <div className="aspect-square bg-zinc-900 border border-gray-800 overflow-hidden">
-                <img
-                  src={`${import.meta.env.BASE_URL}img/infamaIA.jpeg`}
-                  alt="The Infama IA"
-                  className="w-full h-full object-cover"
-                />
+                <AIPlaceholder className="w-full h-full" />
               </div>
               <div className="absolute -bottom-3 -right-3 w-24 h-24 border border-teal-900/50 pointer-events-none"></div>
             </div>
